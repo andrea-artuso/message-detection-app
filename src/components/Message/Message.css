@@ -1,0 +1,47 @@
+:root {
+    --user-color: #7b2cbf;
+}
+
+.message {
+    padding: 14px;
+    background-color: red;
+    max-width: 60%;
+    width: fit-content;
+    display: block;
+    border-radius: 10px;
+    margin: 20px 0;
+    position: relative;
+    color: #fff;
+}
+
+.message > p {
+    word-wrap: break-word;
+}
+
+.message.sent {
+    background-color: var(--user-color);
+    align-self: flex-end;
+}
+.message.sent::after {
+    content: "";
+    position: absolute;
+    right: -8px;
+    bottom: 10px;
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-left: 8px solid var(--user-color);
+}
+
+.message.received {
+    background-color: #282c34;
+    align-self: flex-start;
+}
+.message.received::before {
+    content: "";
+    position: absolute;
+    left: -8px;
+    bottom: 10px;
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-right: 8px solid #282c34;
+}

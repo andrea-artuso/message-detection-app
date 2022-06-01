@@ -1,0 +1,13 @@
+.chat {
+    background-color: red;
+    width: 50%;
+    height: 90vh;
+    display: block;
+    margin: auto;
+    padding: 20px 45px;
+    background-color: rgb(247, 247, 247);
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
